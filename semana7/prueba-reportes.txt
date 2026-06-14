@@ -1,0 +1,9 @@
+1. Al enviar una petición POST al puerto 3000 /reportes con el JSON de prueba, el servidor recibe los datos del cuerpo (tipo y descripción), les asigna un ID único (id: 1) y los guarda dentro del array en memoria llamado "reportes". El servidor responde con un mensaje de éxito confirmando el registro.
+Al consultar la ruta GET en el puerto 3000 /reportes, el servidor responde 
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  },
+  
